@@ -1,18 +1,17 @@
 #include<iostream>
-using namespace std; 
+using namespace std;
 int main(){
-int n,r,sum=0;
+int a,b,sum=0;
 cout<<"Enter a number:";
-cin>>n;
-for(int temp=n; temp!=0; temp/=10){
-	r= temp%10;
-	sum+= r*r*r;
+cin>>a;
+for(int temp=a; temp!=0; temp/=10){
+	b= temp%10;
+	sum+= b*b*b;
 	}
-	if(sum==n){
-	cout<<"It's an Armstrong Number.";
+	if(sum==a){
+	cout<<"It is an Armstrong Number.";
     }
 	else{
-	cout<<"It is not an Armstrong Number.";
+		cout<<"Not an Armstrong Number."<<endl;
 	}
-	
 }
